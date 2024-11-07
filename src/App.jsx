@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/userDetails" element={<UserDetails />} />
+        <Route path="/users" element={<UserDetails />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </div>
