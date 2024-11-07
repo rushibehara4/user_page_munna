@@ -23,19 +23,26 @@ const UserDetailsCard = ({ user }) => {
         )}
 
         <p>
-          <strong>Skills Learned:</strong> {Array.isArray(user.skillsLearned) ? user.skillsLearned.join(", ") : "N/A"}
+          <strong>Skills Learned:</strong>{" "}
+          {Array.isArray(user.skillsLearned)
+            ? user.skillsLearned.join(", ")
+            : "N/A"}
         </p>
 
         <div className="previous-companies">
           <h4>Previous Companies:</h4>
-          {Array.isArray(user.previousCompanies) && user.previousCompanies.length > 0 ? (
+          {Array.isArray(user.previousCompanies) &&
+          user.previousCompanies.length > 0 ? (
             user.previousCompanies.map((company, index) => (
               <div key={company._id || index} className="previous-company">
                 <p>
                   <strong>Domain:</strong> {company.domain}
                 </p>
                 <p>
-                  <strong>Skills:</strong> {Array.isArray(company.skills) ? company.skills.join(", ") : "N/A"}
+                  <strong>Skills:</strong>{" "}
+                  {Array.isArray(company.skills)
+                    ? company.skills.join(", ")
+                    : "N/A"}
                 </p>
               </div>
             ))
@@ -45,26 +52,19 @@ const UserDetailsCard = ({ user }) => {
         </div>
       </div>
       <div className="card-footer">
-        {user.linkedinProfile1 && (
-          <a
-            href={user.linkedinProfile1}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="linkedin-icon"
-          >
-            <i className="fab fa-linkedin"></i> LinkedIn 1
-          </a>
-        )}
-        {user.linkedinProfile2 && (
-          <a
-            href={user.linkedinProfile2}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="linkedin-icon"
-          >
-            <i className="fab fa-linkedin"></i> LinkedIn 2
-          </a>
-        )}
+        {user.linkedinProfiles &&
+          user.linkedinProfiles.length > 0 &&
+          user.linkedinProfiles.map((profile, index) => (
+            <a
+              key={index}
+              href={profile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin-icon"
+            >
+              <i className="fab fa-linkedin"></i> LinkedIn {index + 1}
+            </a>
+          ))}
         {user.cvLink && (
           <a
             href={user.cvLink}
