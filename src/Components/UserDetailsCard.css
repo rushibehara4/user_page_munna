@@ -1,0 +1,72 @@
+.user-card {
+  width: 300px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+.card-header h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.email {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.card-body {
+  width: 100%;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.card-body p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.previous-companies {
+  margin-top: 1em;
+}
+
+.previous-company {
+  margin-top: 8px;
+  background-color: #e9ecef;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.card-footer {
+  margin-top: 1em;
+  display: flex;
+  gap: 10px;
+}
+
+.linkedin-icon {
+  color: #0e76a8;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.cv-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.linkedin-icon:hover,
+.cv-link:hover {
+  text-decoration: underline;
+}

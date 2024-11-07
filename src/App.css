@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* login css */
+
+/* Add your CSS for Login Page */
+/* Login Page Base Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  animation: fadeIn 1.5s ease-in-out;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .login-form-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/* Login Form Container */
+.login-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  animation: slideUp 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Input Fields Styling */
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.input-field input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message Container */
+.message-container {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.message-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.register-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #218838;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.note-login {
+  font-size: 13px;
+  color: red;
+  padding: 0;margin: 0;
+  margin-top: 5px;
+}
+
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.347);
+  margin-top: 30px;
+  width: 70%;
+}
+
+.heading {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+}
+
+.para {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  color: grey;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+}
+
+.input-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-element {
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-element {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-element::placeholder {
+  font-size: 12px;
+}
+
+.star {
+  color: red;
+}
+
+.select-element {
+  font-size: 13px;
+  color: grey;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.select-element:focus,
+.select-element:hover {
+  background-color: #ffffff;
+}
+
+select:focus {
+  background-color: #f0f8ff; /* Example light-blue background */
+}
+
+.description {
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.description::placeholder {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.previous-label-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.user-card-bg-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.347);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 250px;
+  animation: fadeInUp 0.5s ease forwards;
+  overflow-y: scroll;
+  overflow-clip-margin: 2px;
+  height: 400px;
+  min-height: 400px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.role {
+  color: #888;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card-footer a {
+  font-size: 1.2em;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.card-footer a:hover {
+  color: #555;
+}
+
+/* Social media icon colors */
+.icon-facebook {
+  color: #3b5998;
+}
+.icon-twitter {
+  color: #1da1f2;
+}
+.icon-linkedin {
+  color: #0077b5;
+}
+.icon-behance {
+  color: #1769ff;
+}
