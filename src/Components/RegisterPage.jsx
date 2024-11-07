@@ -96,7 +96,7 @@ const Register = () => {
         throw new Error(data.message || "Network response was not ok");
 
       toast.success("Form submitted successfully!");
-      navigate("/"); // This should work to redirect after submission
+      navigate("/userDetails"); // This should work to redirect after submission
     } catch (error) {
       console.error("Error:", error);
       toast.error(error.message || "An error occurred, please try again later");
